@@ -1,0 +1,8 @@
+.Logo {
+  max-width: 2rem;
+}
+.Logo:hover {
+  transition: transform 0.8s;
+  transform: scale(1.5);
+  cursor: pointer;
+}

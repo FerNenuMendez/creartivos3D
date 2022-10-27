@@ -14,14 +14,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  background: linear-gradient(
+    155deg,
+    rgba(23, 177, 105, 1) 0%,
+    rgba(80, 200, 120, 1) 44%,
+    rgba(172, 225, 175, 1) 100%
+  );
+  min-height: 10vh;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0rem 3rem;
 }
 
 .App-link {

@@ -1,0 +1,23 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80%;
+}
+.Navbar__h1 {
+  text-shadow: 2px 2px #000000;
+}
+.Navbar__ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 50%;
+  list-style: none;
+}
+.Navbar__ul__li {
+  text-shadow: 1px 2px #000000;
+}
+.Navbar__ul__li:hover {
+  transition: transform 0.8s;
+  transform: scale(1.5);
+  cursor: pointer;
+}
