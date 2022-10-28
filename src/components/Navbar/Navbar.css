@@ -17,7 +17,7 @@
   text-shadow: 1px 2px #000000;
 }
 .Navbar__ul__li:hover {
-  transition: transform 0.8s;
+  transition: transform 1.5s;
   transform: scale(1.5);
   cursor: pointer;
 }
