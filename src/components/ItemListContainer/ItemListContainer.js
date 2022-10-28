@@ -1,6 +1,10 @@
+import './ItemListContainer.css'
 const ItemListContainer = () => {
   return (
-    <div>ItemListContainer</div>
+    <section className="list__container">
+      <div className="list__container__glass">
+      </div>
+    </section>
   )
 }
 

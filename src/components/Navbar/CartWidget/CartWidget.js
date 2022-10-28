@@ -2,7 +2,10 @@ import img from './logo.png'
 import './CartWidget.css'
 const CartWidget = () => {
   return (
-    <img src={img} alt="Logo" className="Logo" />
+    <div className="carrito">
+      <img src={img} alt="Logo" className="logo" />
+      <p className="logo__contador">1</p>
+    </div>
   )
 }
 
