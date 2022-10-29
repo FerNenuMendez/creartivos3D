@@ -11,7 +11,7 @@ function App() {
         <CartWidget/>
       </header>
       <main>
-        <ItemListContainer/>
+        <ItemListContainer name="Bienvenidos a Creartivos 3D"/>
       </main>
     </div>
   );

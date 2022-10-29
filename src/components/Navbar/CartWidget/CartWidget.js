@@ -1,4 +1,4 @@
-import img from './logo.png'
+import img from '../../../assets/logo.png'
 import './CartWidget.css'
 const CartWidget = () => {
   return (

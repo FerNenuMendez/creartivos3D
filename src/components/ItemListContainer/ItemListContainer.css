@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+
 .list__container {
-  background-image: url(./fondo.webp);
+  background-image: url(.../../../../assets/fondo.webp);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -14,4 +16,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   min-width: 50rem;
   min-height: 20rem;
+}
+.list__container__h2 {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px white;
+  font-size: calc(20px + 2vmin);
+  color: black;
 }
