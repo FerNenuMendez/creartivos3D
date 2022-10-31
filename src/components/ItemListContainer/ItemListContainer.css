@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 
 .list__container {
-  background-image: url(.../../../../assets/fondo.webp);
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url(.../../../../assets/fondo.webp);
+  min-height: 100vh;
 }
 .list__container__glass {
   background: rgba(255, 255, 255, 0.2);

@@ -15,6 +15,8 @@
 
 .App-header {
   display: flex;
+  position: sticky;
+  top: 0px;
   background: linear-gradient(
     155deg,
     rgba(23, 177, 105, 1) 0%,

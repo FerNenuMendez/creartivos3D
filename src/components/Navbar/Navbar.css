@@ -1,22 +1,61 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  min-width: 80%;
+  min-width: 100%;
 }
+.Navbar__img {
+  margin: 8px;
+  max-width: 7rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px #000000;
+}
+.flip-box {
+  background-color: transparent;
+  width: 5rem;
+  height: 5rem;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+
 .Navbar__h1 {
   text-shadow: 2px 2px #000000;
+  font-size: 2.7rem;
+  margin-left: 1rem;
 }
 .Navbar__ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-width: 50%;
+  justify-content: center;
+  min-width: 40%;
   list-style: none;
 }
 .Navbar__ul__li {
-  text-shadow: 1px 2px #000000;
+  text-shadow: 1px 1.5px #000000;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0.5rem;
 }
 a:link,
 a:visited,
@@ -25,6 +64,6 @@ a:active {
 }
 .Navbar__ul__li:hover {
   transition: transform 1.5s;
-  transform: scale(1.5);
+  transform: scale(1.2);
   cursor: pointer;
 }
