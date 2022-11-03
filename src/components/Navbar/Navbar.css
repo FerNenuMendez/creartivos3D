@@ -67,3 +67,24 @@ a:active {
   transform: scale(1.2);
   cursor: pointer;
 }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navbar__h1 {
+    display: none;
+  }
+  .Navbar__img {
+    max-width: 10rem;
+  }
+  .flip-box {
+    min-width: 10rem;
+  }
+  .Navbar__ul {
+    align-items: flex-start;
+    margin-top: 6rem;
+    justify-content: flex-start;
+  }
+}

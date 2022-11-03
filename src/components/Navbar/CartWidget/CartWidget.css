@@ -26,3 +26,17 @@
   background-color: rgba(23, 177, 105, 1);
   box-shadow: 2px 1px 0px#000000;
 }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .carrito {
+    margin-top: 1rem;
+    width: 5rem;
+    height: 3rem;
+  }
+  .logo {
+    max-width: 2rem;
+  }
+  .logo__contador {
+    font-size: small;
+  }
+}

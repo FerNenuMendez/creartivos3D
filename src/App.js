@@ -7,11 +7,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar/>
-
+        <Navbar/> 
       </header>
       <main>
-        <ItemListContainer name="Bienvenidos a Creartivos 3D"/>
+        <ItemListContainer/>
       </main>
     </div>
   );

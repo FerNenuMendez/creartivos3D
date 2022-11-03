@@ -9,6 +9,7 @@
   min-height: 100vh;
 }
 .list__container__glass {
+  margin: 3rem 12rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -18,9 +19,6 @@
   min-width: 50rem;
   min-height: 20rem;
 }
-.list__container__h2 {
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px white;
-  font-size: calc(20px + 2vmin);
-  color: black;
+.list__container__catalogo {
+  margin: 3rem 12rem;
 }

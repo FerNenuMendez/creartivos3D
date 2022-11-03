@@ -1,0 +1,11 @@
+.item__container {
+  border: solid 3px rgb(23, 177, 105);
+  box-shadow: 2px 3px 0px rgb(23, 177, 105);
+  margin: 10px 10px;
+  padding: 5px;
+  border-radius: 15%;
+}
+.item__container__h2 {
+  color: black;
+  text-shadow: 1px 2px whitesmoke;
+}
