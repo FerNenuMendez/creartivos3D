@@ -1,11 +1,20 @@
 .item__container {
-  border: solid 3px rgb(23, 177, 105);
-  box-shadow: 2px 3px 0px rgb(23, 177, 105);
+  border: solid 4px rgb(23, 177, 105);
+  box-shadow: 2px 3px 0px rgb(1, 141, 78);
   margin: 10px 10px;
   padding: 5px;
   border-radius: 15%;
+  background-color: #ace1af;
 }
 .item__container__h2 {
   color: black;
   text-shadow: 1px 2px whitesmoke;
+}
+.item__container__img {
+  max-width: 20rem;
+  border-radius: 30%;
+  border: 3px solid rgb(23, 177, 105);
+}
+.item__container__btn {
+  margin-bottom: 1rem;
 }
