@@ -1,17 +1,17 @@
-import img from '../../assets/logoCreartivos.JPG'
+import img1 from '../../assets/logoCreartivos.JPG'
 import './Navbar.css'
-import CartWidget from './CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 
-const Navbar = () => {
+const Navbar = ({contador}) => {
     return (
         <nav className="Navbar">
             <div className="flip-box">
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
-                    <a href='inicio'><img src={img} className='Navbar__img' alt='Logo Creartivos'/></a>
+                    <a href='inicio'><img src={img1} className='Navbar__img' alt='Logo Creartivos'/></a>
                     </div>
                     <div className="flip-box-back">
-                    <a href='inicio'><img src={img} className='Navbar__img' alt='Logo Creartivos'/></a>
+                    <a href='inicio'><img src={img1} className='Navbar__img' alt='Logo Creartivos'/></a>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <a href="#" className="Navbar__ul__li">Contacto</a>
                 </li>
             </ul>
-            <CartWidget/>
+            <CartWidget contador={contador}/>
         </nav>
     )
 }

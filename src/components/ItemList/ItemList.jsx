@@ -1,10 +1,10 @@
 import Item from '../Item/Item'
 import itemListStyles from './itemListStyles.css'
 
-const ItemList = () => {
+const ItemList = ({add}) => {
   return (
     <div className="itemList">
-        <Item/>
+        <Item add={add}/>
     </div>
   )
 }
