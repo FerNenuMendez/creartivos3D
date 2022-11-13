@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Font";
+  src: url("../../fonts/Lemon\ Love.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Font2";
+  src: url("../../fonts/coolvetica\ rg\ it.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .item__container {
   border: solid 4px rgb(23, 177, 105);
   box-shadow: 2px 3px 0px rgb(1, 141, 78);
@@ -7,8 +19,12 @@
   background-color: #ace1af;
 }
 .item__container__h2 {
+  font-family: "Font";
   color: black;
   text-shadow: 1px 2px whitesmoke;
+}
+.item__container__h3 {
+  font-family: "Font2";
 }
 .item__container__img {
   max-width: 20rem;
@@ -16,5 +32,21 @@
   border: 3px solid rgb(23, 177, 105);
 }
 .item__container__btn {
+  border: 3px solid rgb(10, 102, 59);
+  background: radial-gradient(
+    circle,
+    rgb(9, 143, 81) 0%,
+    rgba(80, 200, 120, 1) 79%,
+    rgba(172, 225, 175, 1) 100%
+  );
+  font-family: "Font2";
+  text-shadow: 1px 1px whitesmoke;
   margin-bottom: 1rem;
+  padding: 5px;
+  border-radius: 30%;
+}
+.item__container__btn:hover {
+  transition: transform 1s;
+  transform: scale(1.2);
+  cursor: pointer;
 }

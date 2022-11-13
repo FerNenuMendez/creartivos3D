@@ -5,8 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(.../../../../assets/fondo.webp);
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   min-height: 100vh;
+  text-align: center;
 }
 .list__container__glass {
   margin: 3rem 12rem;
