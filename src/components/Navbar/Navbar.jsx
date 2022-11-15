@@ -1,45 +1,43 @@
-<<<<<<< HEAD
-import './Navbar.css'
-import img1 from '../../assets/logoCreartivos.JPG'
-=======
-import img1 from '../../assets/logoCreartivos.JPG'
-import './Navbar.css'
->>>>>>> 38e3c936234c83e4af3c4ee96d2999240e92fab1
-import CartWidget from '../CartWidget/CartWidget'
 
-const Navbar = ({contador}) => {
+import './Navbar.css'
+import img1 from '../../assets/logoCreartivos.JPG'
+import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom'
+
+const Navbar = () => {
     return (
         <nav className="Navbar">
+        <Link to="/">   
             <div className="flip-box">
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
-<<<<<<< HEAD
                     <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
                     </div>
                     <div className="flip-box-back">
                     <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
-=======
-                    <a href='inicio'><img src={img1} className='Navbar__img' alt='Logo Creartivos'/></a>
-                    </div>
-                    <div className="flip-box-back">
-                    <a href='inicio'><img src={img1} className='Navbar__img' alt='Logo Creartivos'/></a>
->>>>>>> 38e3c936234c83e4af3c4ee96d2999240e92fab1
                     </div>
                 </div>
             </div>
+        </Link>
             <h1 className="Navbar__h1">CREARTIVOS 3D</h1>
             <ul className="Navbar__ul">
                 <li className="Navbar__ul__li">
-                    Superheroes
+                    <Link to="/categoria/Superheroes" className="Navbar__ul__li">Superheroes</Link> 
+                </li>
+                <li className="Navbar__ul__li" >
+                <Link to="/categoria/StarWars" className="Navbar__ul__li">Star Wars</Link>
                 </li>
                 <li className="Navbar__ul__li">
-                Star Wars
+                <Link to="/categoria/Disney" className="Navbar__ul__li">Disney</Link>
                 </li>
                 <li className="Navbar__ul__li">
-                Disney
+                <Link to="/categoria/Personajes" className="Navbar__ul__li">Personajes</Link>
+                </li>
+                <li className="Navbar__ul__li">
+                <Link to="/categoria/Fantasia" className="Navbar__ul__li">Fantasia</Link>
                 </li>
             </ul>
-            <CartWidget contador={contador}/>
+            <Link to="/Cart"><CartWidget /></Link>
         </nav>
     )
 }

@@ -1,28 +1,26 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import { useState } from 'react';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+
 
 
 function App() {
-<<<<<<< HEAD
 
-=======
-  const [contador,setContador]=useState(0) 
-  
-  const add =()=>{
-    setContador(contador+1)
-  }
->>>>>>> 38e3c936234c83e4af3c4ee96d2999240e92fab1
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar contador={contador}/> 
-      </header>
-      <main>
-        <ItemListContainer add={add}/>
-      </main>
-    </div>
+    <BrowserRouter>
+        <header className="App-header">
+          <Navbar/> 
+        </header>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/categoria/:linea' element={<ItemListContainer/>}/>
+          <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+        </Routes>
+    </BrowserRouter>  
   );
 }
 

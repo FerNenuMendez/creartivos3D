@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
-
-.list__container {
+.cart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +7,4 @@
   background-image: linear-gradient(180deg, #8ec5fc 0%, #e0c3fc 100%);
   min-height: 100vh;
   text-align: center;
-}
-
-.list__container__catalogo {
-  margin: 3rem 12rem;
 }
