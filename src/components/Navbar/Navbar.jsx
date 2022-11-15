@@ -1,17 +1,29 @@
+<<<<<<< HEAD
 import './Navbar.css'
 import img1 from '../../assets/logoCreartivos.JPG'
+=======
+import img1 from '../../assets/logoCreartivos.JPG'
+import './Navbar.css'
+>>>>>>> 38e3c936234c83e4af3c4ee96d2999240e92fab1
 import CartWidget from '../CartWidget/CartWidget'
 
-const Navbar = () => {
+const Navbar = ({contador}) => {
     return (
         <nav className="Navbar">
             <div className="flip-box">
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
+<<<<<<< HEAD
                     <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
                     </div>
                     <div className="flip-box-back">
                     <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
+=======
+                    <a href='inicio'><img src={img1} className='Navbar__img' alt='Logo Creartivos'/></a>
+                    </div>
+                    <div className="flip-box-back">
+                    <a href='inicio'><img src={img1} className='Navbar__img' alt='Logo Creartivos'/></a>
+>>>>>>> 38e3c936234c83e4af3c4ee96d2999240e92fab1
                     </div>
                 </div>
             </div>
@@ -27,7 +39,7 @@ const Navbar = () => {
                 Disney
                 </li>
             </ul>
-            <CartWidget/>
+            <CartWidget contador={contador}/>
         </nav>
     )
 }
