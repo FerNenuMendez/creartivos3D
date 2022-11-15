@@ -1,40 +1,33 @@
-import { Link, Navlink } from 'react-router-dom'
+import './Navbar.css'
 import img1 from '../../assets/logoCreartivos.JPG'
 import CartWidget from '../CartWidget/CartWidget'
-import './Navbar.css'
-
 
 const Navbar = () => {
     return (
         <nav className="Navbar">
-            <Link to="/">
-                <div className="flip-box">
-                    <div className="flip-box-inner">
-                        <div className="flip-box-front">
-                        <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
-                        </div>
-                        <div className="flip-box-back">
-                        <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
-                        </div>
+            <div className="flip-box">
+                <div className="flip-box-inner">
+                    <div className="flip-box-front">
+                    <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
+                    </div>
+                    <div className="flip-box-back">
+                    <img src={img1} className='Navbar__img' alt='Logo Creartivos'/>
                     </div>
                 </div>
-            </Link>
+            </div>
             <h1 className="Navbar__h1">CREARTIVOS 3D</h1>
             <ul className="Navbar__ul">
                 <li className="Navbar__ul__li">
-                    <Link to="/categoria/Superheroes" className="Navbar__ul__li">Superheores</Link>
-                    
+                    Superheroes
                 </li>
                 <li className="Navbar__ul__li">
-                    <Link to="/categoria/StarsWars" className="Navbar__ul__li">Stars Wars</Link>
-                    
+                Star Wars
                 </li>
                 <li className="Navbar__ul__li">
-                    <Link to="/categoria/Disney" className="Navbar__ul__li">Disney</Link>
-                    
+                Disney
                 </li>
             </ul>
-            <Link to="/Cart"><CartWidget/></Link>
+            <CartWidget/>
         </nav>
     )
 }

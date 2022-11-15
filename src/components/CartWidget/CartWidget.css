@@ -11,9 +11,9 @@
   cursor: pointer;
 }
 .logo {
-  width: 2.5rem;
+  width: 3rem;
   height: 3rem;
-  margin-right: 1rem;
+  margin-right:  1rem;
 }
 .logo__contador {
   z-index: 1;
@@ -25,7 +25,7 @@
   background-color: rgba(23, 177, 105, 1);
   box-shadow: 2px 1px 0px#000000;
 }
-.logo__contador__escondido {
+.logo__contador__escondido{
   display: none;
 }
 @media (min-width: 320px) and (max-width: 540px) {

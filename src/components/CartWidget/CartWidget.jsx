@@ -1,13 +1,11 @@
-
-import { BiCartAlt } from "react-icons/bi";
 import './CartWidget.css'
+import { BiCartAlt } from "react-icons/bi";
 
-
-const CartWidget = ({contador}) => {
+const CartWidget = () => {
   return (
     <div className="carrito">
       <BiCartAlt className="logo"/>
-      <p id='contador' className="logo__contador">{contador}</p>
+      <p id='contador' className="logo__contador">0</p>
     </div>
   )
 }

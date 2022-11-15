@@ -1,12 +1,9 @@
-import data from '../../data/catalogomates'
 import './item.css'
+import data from '../../data/catalogomates'
 
+//importar las imagenes, el btn "add carrito" 
 
-
-//importar las imagenes 
-
-
-const Item = ({add}) => {
+const Item = () => {
 
     const mate = data.map((producto)=>{
         return(
@@ -15,7 +12,7 @@ const Item = ({add}) => {
                 <h2 className="item__container__h2">Mate {producto.nombre}</h2>
                 <h3 className="item__container__h3">Linea {producto.linea}</h3>
                 <h3 className="item__container__h3">Precio ${producto.precio}</h3>
-                <button onClick={add}>Al Carrito!</button>
+                <button>Al Carrito!</button>
             </div>
         </div>
     )})

@@ -17,6 +17,8 @@
   padding: 5px;
   border-radius: 15%;
   background-color: #ace1af;
+  width: 20rem;
+  height: 15rem;
 }
 .item__container__h2 {
   font-family: "Font";
