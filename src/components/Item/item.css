@@ -24,6 +24,7 @@
   font-family: "Font";
   color: black;
   text-shadow: 1px 2px whitesmoke;
+  text-decoration: none;
 }
 .item__container__h3 {
   font-family: "Font2";

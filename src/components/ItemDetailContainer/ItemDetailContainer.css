@@ -1,0 +1,9 @@
+.itemDetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(60deg, #8ec5fc 0%, #e0c3fc 100%);
+  min-height: 100vh;
+  text-align: center;
+}

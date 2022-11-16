@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Font";
+  src: url("../../fonts/Lemon\ Love.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Font2";
+  src: url("../../fonts/coolvetica\ rg\ it.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.ItemDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(360deg, #8ec5fc 0%, #e0c3fc 100%);
+  min-height: 100vh;
+  text-align: center;
+}
+.detail__h2 {
+  font-family: "Font";
+  color: black;
+  text-shadow: 1px 2px whitesmoke;
+  text-decoration: none;
+}
+.detail_h3 {
+  font-family: "Font2";
+}

@@ -62,7 +62,7 @@ const mates=[
     {
         id:6,
         nombre:'Darth Vader',
-        linea:'Stars Wars',
+        linea:'StarWars',
         precio:0,
         // img1:'./mates/vader0.JPG',
         // img2:'./mates/vader1.JPG',
@@ -72,7 +72,7 @@ const mates=[
     {
         id:7,
         nombre:'Mandalorian',
-        linea:'Stars Wars',
+        linea:'StarWars',
         precio:0,
             // img1:'./mates/mando0.JPG',
             // img2:'./mates/mando1.JPG',
@@ -82,7 +82,7 @@ const mates=[
     {
         id:8,
         nombre:'Stormtrooper',
-        linea:'Stars Wars',
+        linea:'StarWars',
         precio:0,
             // img1:'./mates/troo0.JPG',
             // img2:'./mates/troo1.JPG',
@@ -92,7 +92,7 @@ const mates=[
     //   {
     //       id:8,
     //       nombre:'Death Star',
-    //       linea:'Stars Wars',
+    //       linea:'StarWars',
     //       precio:0,
     // //         img1:'./mates/star0.JPG',
     // //         img2:'./mates/star1.JPG',
@@ -280,5 +280,28 @@ const mates=[
     // //         img4:'./mates/pelota3.HEIC',
     //   },
 ];
+export const getProductsByCategory = (category) => {
+    return new Promise((res) => {
+        const productos = mates.filter(product => product.linea === category);
+        setTimeout(() => {
+                res(productos);
+            }, 2000);
+        });
+}
+export const getProducts = () => {
+    return new Promise((res) => {
+        setTimeout(() => {
+            res(mates);
+        }, 2000);
+    });
+}
+export const getProductById = (id) => {
+    return new Promise((res) => {
+        const producto = mates.filter(product => product.id === id);
+        setTimeout(() => {
+                res(producto);
+            }, 1000);
+        });
+}
 
 export default mates

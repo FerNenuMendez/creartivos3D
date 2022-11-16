@@ -1,10 +1,12 @@
 import './ItemList.css'
 import Item from '../Item/Item'
 
-const ItemList = () => {
+
+const ItemList = ({product}) => {
+  
   return (
     <div className="itemList">
-        <Item />
+        <Item product={product}/>
     </div>
   )
 }
