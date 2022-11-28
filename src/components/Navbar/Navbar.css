@@ -40,7 +40,7 @@
 }
 
 .Navbar__h1 {
-  text-shadow: 2px 2px #000000;
+  text-shadow: 3px 3px #2f6c04;
   font-size: 2.7rem;
   margin-left: 3.5rem;
 }
@@ -53,7 +53,6 @@
   list-style: none;
 }
 .Navbar__ul__li {
-  text-shadow: 1px 1.5px #000000;
   font-size: calc(10px + 2vmin);
   color: white;
   margin: 0.2rem;

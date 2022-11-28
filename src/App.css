@@ -1,6 +1,5 @@
 .App-header {
   display: flex;
-  position: sticky;
   top: 0px;
   min-height: 10vh;
   align-items: center;
@@ -8,17 +7,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 0rem 3rem;
-  background: rgba(22, 139, 16, 0.406);
-  border-radius: 0px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.397);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(25px);
-  border: 1px solid rgba(35, 240, 35, 0.3);
+  background-color: #2d2d2d;
   text-align: center;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @media (min-width: 320px) and (max-width: 540px) {

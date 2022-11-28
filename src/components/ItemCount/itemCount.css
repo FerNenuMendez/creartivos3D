@@ -1,0 +1,16 @@
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.count__btn {
+  margin: 1rem;
+  text-align: center;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+.count__h3 {
+  text-align: center;
+  font-size: larger;
+}
