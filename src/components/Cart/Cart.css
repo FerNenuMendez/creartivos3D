@@ -1,10 +1,53 @@
-.cart {
+@font-face {
+  font-family: "Font";
+  src: url("../../fonts/Lemon\ Love.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Font2";
+  src: url("../../fonts/coolvetica\ rg\ it.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.cartCart {
+  display: flex;
+}
+.cartContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* background-image: url(.../../../../assets/fondo.webp); */
-  background-color: #f3f3f3;
-  min-height: 100vh;
+  justify-content: flex-start;
+  width: 65rem;
+}
+.cart__h2 {
   text-align: center;
+}
+.cartContainer__btn {
+  align-self: flex-end;
+  margin: 2rem;
+  max-width: 8rem;
+  font-size: larger;
+  background-color: #f4f4f8;
+  border: 3px solid #28afb0;
+  box-shadow: 1px 2px #5aca09;
+  border-radius: 15%;
+}
+.cartContainer__btn:hover {
+  transition: transform 1.5s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.cart__btnHome {
+  max-width: 8rem;
+  font-size: larger;
+  background-color: #f4f4f8;
+  border: 3px solid #28afb0;
+  box-shadow: 1px 2px #5aca09;
+  border-radius: 15%;
+}
+.cart__btnHome:hover {
+  transition: transform 1.5s;
+  transform: scale(1.2);
+  cursor: pointer;
 }

@@ -18,7 +18,7 @@
   padding: 5px;
   border-radius: 15%;
   width: 20rem;
-  height: 15rem;
+  height: 35rem;
 }
 .item__container__h2 {
   font-family: "Font";
@@ -29,7 +29,22 @@
   font-family: "Font2";
 }
 .item__container__img {
-  max-width: 20rem;
-  border-radius: 30%;
-  border: 3px solid rgb(23, 177, 105);
+  width: 19rem;
+  height: 18rem;
+  border-radius: 25%;
+  margin-bottom: 1rem;
+  border: 3px solid #28afb0;
+}
+.item__container__btn {
+  background-color: #f4f4f8;
+  border: 3px solid #28afb0;
+  box-shadow: 1px 2px #5aca09;
+  border-radius: 10%;
+  font-size: medium;
+  padding: 0.5rem;
+}
+.item__container__btn:hover {
+  transition: transform 1.5s;
+  transform: scale(1.2);
+  cursor: pointer;
 }

@@ -1,7 +1,7 @@
 import './itemCount.css'
 const ItemCount = ({count, setCount}) => {
-  if(count<0){
-    count=0
+  if(count<1){
+    count=1
   }
   return (
     <div className='count'>

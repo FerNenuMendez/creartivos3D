@@ -10,55 +10,51 @@
   font-style: normal;
   font-weight: normal;
 }
-.ItemDetail {
+.cart {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f3f3f3;
-  min-height: 100vh;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 1rem 20rem;
   text-align: center;
 }
-.ItemDetail__card {
+.item__container1 {
   background-color: #f4f4f8;
-  border: 6px solid #28afb0;
-  box-shadow: 2px 3px #5aca09;
-  margin: 10px 10px;
+  border: 3px solid #28afb0;
+  box-shadow: 1px 3px #5aca09;
   padding: 15px;
   border-radius: 15%;
-  width: 40rem;
-  height: 59rem;
+  width: 25rem;
+  height: 26rem;
 }
-.ItemDetail__card__img {
-  width: 21rem;
-  height: 21rem;
-  border-radius: 25%;
-  margin-bottom: 1rem;
-  border: 3px solid #2d2d2d;
-}
-.detail__h2 {
+.item__container__h2 {
   font-family: "Font";
+  color: black;
   text-decoration: none;
 }
-.detail_h3 {
+.item__container__h3 {
   font-family: "Font2";
 }
-.detail__botonera {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.detail__btn {
+.bnt__borrar {
   background-color: #f4f4f8;
   border: 3px solid #28afb0;
   box-shadow: 1px 2px #5aca09;
-  border-radius: 10%;
+  border-radius: 25%;
   padding: 0.5rem;
-  margin-bottom: 2rem;
 }
-.detail__btn:hover {
+.bnt__borrar:hover {
   transition: transform 1.5s;
   transform: scale(1.2);
   cursor: pointer;
+}
+.section__cart {
+  align-self: flex-start;
+}
+.cart__card__img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 25%;
+  margin-bottom: 1rem;
+  border: 3px solid #28afb0;
+  box-shadow: 1px 3px #5aca09;
 }

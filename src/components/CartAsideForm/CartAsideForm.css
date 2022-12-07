@@ -1,0 +1,23 @@
+.cartAsideForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cartAsideForm__h2 {
+  font-size: larger;
+  text-decoration: underline 2px #2d2d2d;
+}
+.cartAsideForm__label {
+  font-size: medium;
+}
+.cartAsideForm__form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.cartAsideForm__input {
+  margin: 5px;
+  border: 2px solid #28afb0;
+  box-shadow: 1px 1px #5aca09;
+  border-radius: 5%;
+}

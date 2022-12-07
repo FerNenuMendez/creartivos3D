@@ -6,7 +6,9 @@ const ItemList = ({product}) => {
   
   return (
     <div className="itemList">
+      <div className='itemList__anexo'>
         <Item product={product}/>
+      </div>
     </div>
   )
 }

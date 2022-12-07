@@ -2,8 +2,9 @@ import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { getProductsByCategory } from '../../data/catalogomates'
-import { getProducts } from '../../data/catalogomates'
+import { query, where, collection, getDocs, getFirestore } from 'firebase/firestore'
+
+
 
 
 const ItemListContainer = () => {
@@ -11,20 +12,38 @@ const ItemListContainer = () => {
   const [items , setItems] = useState([]);
   const {linea} = useParams();
 
-  useEffect(() => {
-        if (linea) {
-          setTimeout(() => {
-            getProductsByCategory(linea).then((products) => {
-              setItems(products);
-            });
-          }, 2000);
-        }
-        else {
-          getProducts().then((products) => {
-            setItems(products);
-          });
-        }
-  }, [linea]);
+  const getProducts=()=>{
+    const db = getFirestore()
+    const queryMates = collection(db,"Mates")
+
+    if (linea) {
+      const queryFilter=query(queryMates, where("linea","==", linea))
+      getDocs(queryFilter)
+      .then((response)=>{
+        const data = response.docs.map((products)=>{
+          return {id: products.id, ...products.data()}
+        })
+        setItems(data)
+      })
+      .catch((error)=>{console.log(error)})
+
+    } else {
+      getDocs(queryMates)
+      .then((response)=>{
+        const data = response.docs.map((products)=>{
+          return {id: products.id, ...products.data()}
+        })
+        setItems(data)
+      })
+      .catch((error)=>{console.log(error)})
+    }
+  }
+  
+  useEffect(()=>{
+    getProducts()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [linea])
+
 
   return (
     <section id="catalogo" className="list__container">
