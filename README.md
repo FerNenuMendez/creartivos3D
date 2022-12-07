@@ -5,6 +5,6 @@ Alojado en Firebase.
 Proyecto Final para CoderHouse. 
 
 
-## Authors
+## Autor
 
 - [@FerNenuMendez](https://github.com/FerNenuMendez)
