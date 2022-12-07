@@ -8,9 +8,3 @@ Proyecto Final para CoderHouse.
 ## Authors
 
 - [@FerNenuMendez](https://github.com/FerNenuMendez)
-
-
-## Demo
-
-https://fernenumendez.github.io/creartivos3D/
-
